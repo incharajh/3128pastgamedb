@@ -10,15 +10,52 @@ svg.arrow{
 .sidebar {
     position: fixed;
     top: 0;
+    left:0px;
     width: 10.4vw;
     height: 100vh;
     background: #E1DCD1;
-    z-index: 7;
-    margin:0px auto 0 auto;
+}
+
+.sidebar-line-1,.sidebar-line-2, .sidebar-line-3, .sidebar-line-4{
+    height:10vh;
+    width:0.2vw;
+    position:absolute;
+    left:45%;
+    border-radius:0.1vw;
+}
+.sidebar-line-1{
+    top:20%;
+    background: #0A2239;
+}
+.sidebar-line-2{
+    top:35%;
+    background:#176087;
+}
+.sidebar-line-3{
+    top:50%;
+    background: #1D84B5;
+}
+.sidebar-line-4{
+    top:65%;
+    background: #53A2BE;
+}
+.sidebar-text{
+    font-size:3vh;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-family: 'Roboto', 'sans-serif';
+    color:#fff;
+    position: absolute;
+    top:83%;
+    left:25%;
+
 }
 
 .narwhal{
     position: absolute;
+    top:5%;
+    left: 6%;
 }
 
 .navbar {
@@ -162,11 +199,12 @@ svg.arrow{
 }
 
 div.bg-a {
-    width: 104.1vw;
+    width: 90vw;
     height: 85.3vh;
     position:absolute;
     background-color:#E1DCD1;
     top:117%;
+    left:10%;
     padding:2.8vh 1.3vw 2.8vh 1.3vw;
     box-sizing:border-box;
 }
