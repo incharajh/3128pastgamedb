@@ -1,0 +1,40 @@
+{
+  "name": "cascadejs",
+  "version": "1.0.7",
+  "description": "CascadeJS makes it simple to add cascading animations to individual letters in a text string, using only vanilla javascript, for dynamic typography.",
+  "main": "cascade.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartboy011/CascadeJS.git"
+  },
+  "keywords": [
+    "javascript",
+    "npm",
+    "animation",
+    "cascading",
+    "typography",
+    "letters"
+  ],
+  "author": "Joshua Bartlett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bartboy011/CascadeJS/issues"
+  },
+  "homepage": "https://github.com/bartboy011/CascadeJS#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "0.0.15",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

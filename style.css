@@ -2,6 +2,9 @@ body{
     background-color: #EDE6D9;
     overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 svg.arrow{
     width:100%;
     height:100%;
@@ -59,33 +62,53 @@ svg.arrow{
 }
 
 .navbar {
-    position: absolute;
+    position: relative;
     width: 100%;
-    display: inline-block;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 100;
-    -webkit-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
 }
 
 .navbar li{
     float: left;
     list-style: none;
-    margin-top: 15px;
+    
 }
 
+.navbar form{
+    background: #E1DCD1;
+    border-radius:3vh;
+    height:5.5vh;  
+    display:inline-flex;
+
+}
+.s-icon{
+    stroke:#53A2BE;
+    stroke-width: 0.1vw;
+    align-self: center;
+    margin-left:0.7vw;
+    padding:0.2vw;
+    display:inline-flex;
+}
+.navbar input{
+    background: #E1DCD1;
+    outline:transparent;
+    border:transparent;
+    margin-left:0.5vw;
+    border-radius:3vh;
+    font-family:'Roboto', 'sans-serif';
+    font-size:2vh;
+    font-style:italic;
+    
+}
 .navbar a{
-    padding: 2.8vh 1.3vw 2.8vh 1.3vw;
-    margin-left: 12.4vw;
+    padding: 2.4vh 1vw 2.4vh 1vw;
+    margin-left: 9vw;
     font-family: 'Roboto Mono', 'monospace';
     font-size:normal;
     color: #53A2BE;
+    text-decoration: none;
 }
 
 .navbar a:hover{
@@ -130,6 +153,12 @@ svg.arrow{
   top: 65%;
   left: 21%;
 }
+/* .scroll-container :hover{
+    transform: translateY(50%);
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: calc(0.055s);
+} */
 .tagline-wrapper{
     position:absolute;
     top:40%;
@@ -203,7 +232,7 @@ div.bg-a {
     height: 85.3vh;
     position:absolute;
     background-color:#E1DCD1;
-    top:117%;
+    top:125.6%;
     left:10%;
     padding:2.8vh 1.3vw 2.8vh 1.3vw;
     box-sizing:border-box;
@@ -213,9 +242,9 @@ div.bg-a {
     font-family:'Roboto Mono', 'monospace';
     color:#53A2BE;
     line-height:2.5rem;
-    left:15%;
+    left:10%;
     width: 71.6vw;
-    font-size:1.75vw;
+    font-size:3.7vh;
     font-weight:bold;
 }
 .recent-header{
@@ -340,6 +369,178 @@ img.robot{
     right:1%;
     top:50%;
 }
+.pg-title{
+    position:absolute;
+    font-size: 9vh;
+    top:215%;
+    left:13%;
+    display:flex;
+    font-family:'Roboto Mono', 'monospace';
+    color:#53A2BE;
+}
+.shaded{
+    background-color: #53A2BE;
+    color:#EDE6D9;
+    transform:skew(-10deg);
+}
+.pg-recent{
+    position:absolute;
+    left:15%;
+    top:235%;
+    display:flex;
+    font-family: 'Roboto Mono', 'monospace';
+    align-items: center;
+}
+.game-name{
+    color: #53A2BE;
+    font-style:italic;
+    font-weight:bolder;
+    font-size:5vh;
+    background: linear-gradient(to top, #E1DCD1 50%, transparent 50%);
+    margin-right:2vw;
+}
+.pg-tip{
+    display:flex;
+}
+.lightbulb-circle{
+    height:3.8vh;
+    align-self: center;
+}
+.pg-tip-text{
+    border-style:solid;
+    border-width: 0.15vw;
+    border-radius:6vw;
+    border-color: #1D84B5;
+    height:3.5vh;
+    font-size:1.7vh;
+    width:27.2vw;
+}
+.pad{
+    position:absolute;
+    padding:0vh 0.9vw 0vh 0.9vw;
+    top:6%;
+    font-weight:bold;
+    color:#1D84B5;
+}
+.games-list{
+    position:absolute;
+    top:245%;
+    left:15%;
+}
+.col{
+    float:left;
+    font-family:'Roboto Mono', 'monospace';
+    color:#53A2BE;
+    font-weight:bold;
+    font-style:italic;
+    font-size:1.5vw;
+}
+.col li{
+    margin:10vh 0vw;
+}
+.col ul{
+    margin-right:3.5vw;
+}
+.c-title{
+    font-family:'Roboto', 'sans-serif';
+    font-size:15vh;
+    font-weight:bolder;
+    position:absolute;
+    left:36%;
+    top:403%;
+    background-color: #0A2239;
+    background-image: linear-gradient( 45deg, #0A2239 16.666%, #176087 16.666%, #176087 33.333%, #1D84B5 33.333%, #1D84B5 50%, #53A2BE  50%, #53A2BE  66.666%, #1D84B5 66.666%, #1D84B5 83.333%, #176087 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+  
+.c-title:hover{
+      animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+  
+@keyframes rainbow-text-simple-animation-rev {
+      0% {
+          background-size: 650%;
+      }
+      40% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 100%;
+      }
+}
+@keyframes rainbow-text-simple-animation {
+      0% {
+          background-size: 100%;
+      }
+      80% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 650%;
+      }
+}
+
+.message{
+    font-family:'Roboto', 'sans-serif';
+    color:#53A2BE;
+    font-size: 3vh;
+    position:absolute;
+    font-style:italic;
+    top:425%;
+    width:60%;
+    left:25%;
+    font-weight:bold;
+}
+.c-form form{
+    position:absolute;
+    left:25%;
+    top:440%;
+    height:30vh;
+    width:60vw;
+}
+.c-form textarea{
+    color:#0A2239;
+    outline:none;
+    font-family:'Roboto', 'sans-serif';
+    font-size:2vh;
+    background:#E1DCD1;
+    border:transparent;
+    resize:none;    
+}
+#c-name{
+    position:absolute;
+    height:7vh;
+    width:15vw;
+}
+#c-email{
+    position:absolute;
+    height:7vh;
+    width:15vw;
+    top:50%;
+}
+#c-subject{
+    position:absolute;
+    height:7vh;
+    width:15vw;
+    top:100%;
+}
+#c-body{
+    position:absolute;
+    height:40vh;
+    width:40vw;
+    left:30%;
+}
+
+
+
+
+
+
+
 
   
 /* #0A2239 #176087 #1D84B5 #53A2BE #E1DCD1 #EDE6D9 */
