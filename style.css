@@ -5,6 +5,7 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
+
 svg.arrow{
     width:100%;
     height:100%;
@@ -18,7 +19,6 @@ svg.arrow{
     height: 100vh;
     background: #E1DCD1;
 }
-
 .sidebar-line-1,.sidebar-line-2, .sidebar-line-3, .sidebar-line-4{
     height:10vh;
     width:0.2vw;
@@ -54,7 +54,6 @@ svg.arrow{
     left:25%;
 
 }
-
 .narwhal{
     position: absolute;
     top:5%;
@@ -69,13 +68,11 @@ svg.arrow{
     -ms-flex-align: center;
     align-items: center;
 }
-
 .navbar li{
     float: left;
     list-style: none;
     
 }
-
 .navbar form{
     background: #E1DCD1;
     border-radius:3vh;
@@ -110,7 +107,6 @@ svg.arrow{
     color: #53A2BE;
     text-decoration: none;
 }
-
 .navbar a:hover{
     font-weight: 60px;
 }
@@ -122,7 +118,6 @@ svg.arrow{
     flex-direction: column;
     margin: 0 auto; /* center horizontally */
 }
-
 .scroll-text {
     position: absolute;
     color: transparent;
@@ -144,7 +139,6 @@ svg.arrow{
     transition: all .3s ease-in-out 0s;
     
 }
-
 .scroll-arrow {
   align-items: center;
   position:absolute;
@@ -159,6 +153,7 @@ svg.arrow{
     transition-timing-function: linear;
     transition-delay: calc(0.055s);
 } */
+
 .tagline-wrapper{
     position:absolute;
     top:40%;
@@ -172,7 +167,6 @@ svg.arrow{
     margin-right: 1.7vh;
     background: #0A2239;
 }
-
 .main-tagline{
     font-family: 'Roboto', 'sans-serif';
     font-size: 1.9vw;
@@ -186,7 +180,6 @@ svg.arrow{
     top: 55%;
     left: 28%;
 }
-
 .main-title {
     font-family:'Roboto Mono', 'monospace';
     line-height: 18vh;
@@ -196,6 +189,7 @@ svg.arrow{
     font-weight:bolder;
     color:#53A2BE;
 }
+
 .accent{
     color:#1D84B5;
 }
@@ -205,6 +199,7 @@ svg.arrow{
 .small-t{
     color:#0A2239;
 }
+
 .about{
     margin:auto;
 }
@@ -383,6 +378,7 @@ img.robot{
     color:#EDE6D9;
     transform:skew(-10deg);
 }
+
 .pg-recent{
     position:absolute;
     left:15%;
@@ -390,6 +386,10 @@ img.robot{
     display:flex;
     font-family: 'Roboto Mono', 'monospace';
     align-items: center;
+}
+#past-game a{
+    text-decoration:none;
+    
 }
 .game-name{
     color: #53A2BE;
@@ -422,10 +422,11 @@ img.robot{
     font-weight:bold;
     color:#1D84B5;
 }
-.games-list{
+div#games-list{
     position:absolute;
     top:245%;
     left:15%;
+    display: flex;
 }
 .col{
     float:left;
@@ -441,13 +442,129 @@ img.robot{
 .col ul{
     margin-right:3.5vw;
 }
+.game-desc{
+    /* position:absolute; */
+    left:14%;
+}
+.game-desc h2{
+    position: absolute;
+    font-family:'Roboto', 'sans-serif';
+    font-size: 5.2vw;
+    font-weight:bolder;
+    background: -webkit-linear-gradient(180deg, #1D84B5, #176087);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  font-style: italic;
+  left:14%;
+}
+.game-desc p{
+    position: absolute;
+    font-family:'Roboto', 'sans-serif';
+    font-size:1.15vw;
+    width:44.3vw;
+    color:#1D84B5;
+    font-weight:bold;
+    top:237%;
+    left:14%;
+}
+.bg-rob-desc{
+    position: absolute;
+    width: 32.6vw;
+    left:64.6%;
+    top:220%;
+    height: 40vh;
+    position:absolute;
+    background-color:#E1DCD1;
+    padding:2.8vh 1.3vw 2.8vh 1.3vw;
+    box-sizing:border-box;
+}
+.bg-rob-desc h2, .bg-com h2{
+    text-align:center;
+    font-family:'Roboto Mono', 'monospace';
+    font-size:1.6vw;
+    color:#1D84B5;
+}
+button#back{
+    position:absolute;
+    color:#53A2BE;
+    font-family: 'Roboto', 'sans-serif';
+    font-style: italic;
+    font-size:2.4vh;
+    top:214%;
+    left:14%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-color: transparent;
+}
+div#back text{
+    margin-left:1vw;
+}
+.bg-com{
+    position: absolute;
+    width: 32.6vw;
+    left:64.6%;
+    top:270%;
+    height: 40vh;
+    position:absolute;
+    background-color:#E1DCD1;
+    padding:2.8vh 1.3vw 2.8vh 1.3vw;
+    box-sizing:border-box;
+}
+h2#title-pic{
+    position: absolute;
+    width:55.3vw;
+    top:-5%;
+    text-align:center;
+    font-family:'Roboto Mono', 'monospace';
+    font-size: 2vw;
+    color:#176087;
+}
+.bg-rob-desc p, .bg-com p{
+    font-family:'Roboto', 'sans-serif';
+    text-align:center;
+    font-size:2.2vh;
+    color:#0A2239;
+    font-weight:bold;
+}
+.bg-pic{
+    position:absolute;
+    width: 44.2vw;
+    top:270%;
+    left:14%;
+    height: 40vh;
+    position:absolute;
+    background-color:#E1DCD1;
+    padding:2.8vh 1.3vw 2.8vh 1.3vw;
+    box-sizing:border-box;
+}
+.regs{
+    position: absolute;
+    left:50%;
+    top:50%;
+    display:flex;
+    flex-wrap:wrap;
+}
+div#images{
+    position:absolute;
+    align-items: center;
+}
+img#r-image{
+    position: absolute;
+    left:2vw;
+    width:15vw;
+    height:auto;
+}
+
+
+
 .c-title{
     font-family:'Roboto', 'sans-serif';
     font-size:15vh;
     font-weight:bolder;
     position:absolute;
     left:36%;
-    top:403%;
+    top:423%;
     background-color: #0A2239;
     background-image: linear-gradient( 45deg, #0A2239 16.666%, #176087 16.666%, #176087 33.333%, #1D84B5 33.333%, #1D84B5 50%, #53A2BE  50%, #53A2BE  66.666%, #1D84B5 66.666%, #1D84B5 83.333%, #176087 83.333%);
     background-size: 100%;
@@ -455,12 +572,10 @@ img.robot{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
-}
-  
+} 
 .c-title:hover{
       animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-}
-  
+} 
 @keyframes rainbow-text-simple-animation-rev {
       0% {
           background-size: 650%;
@@ -483,14 +598,13 @@ img.robot{
           background-size: 650%;
       }
 }
-
 .message{
     font-family:'Roboto', 'sans-serif';
     color:#53A2BE;
     font-size: 3vh;
     position:absolute;
     font-style:italic;
-    top:425%;
+    top:445%;
     width:60%;
     left:25%;
     font-weight:bold;
@@ -498,7 +612,7 @@ img.robot{
 .c-form form{
     position:absolute;
     left:25%;
-    top:440%;
+    top:460%;
     height:30vh;
     width:60vw;
 }

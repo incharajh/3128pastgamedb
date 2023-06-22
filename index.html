@@ -79,48 +79,100 @@
                         <div class = 'bg-a'><p class='text-a'>dear user, <br><br>welcome to team 3128’s past game database. thank you for stopping by! our strategy department uses this archive to explore precedents for elements in new games by referencing old ones. here, you will find a compiled page of robot archetypes for every game dating back to 2010. you’ll also find strategical commentary, which consists of our thoughts on each game and how we approached analyzing it. we hope that this archive helps anyone perusing it and if you have any questions, please don’t hesitate to contact us!<br><br>thank you,<br>team 3128’s strategy team_</p></div>
                     </section>
                     <section id = "past-game" style="height:100vh;">
-                        <div class="pg-title">
+                        <div id="first">
+                            <div class="pg-title">
                                 <div class="shaded">past</div>games
                         </div>
-                        <div class="pg-recent">
-                            <div class="game-name">2023 | charged up</div>    
-                            <div class="pg-tip">
-                                <svg class="lightbulb-circle" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18.5287 44.0289C24.9496 42.0109 26.7841 42.1944 32.2877 44.0289M25.8669 17.2447L23.2985 22.0145L28.0683 22.198L25.8669 27.7015M19.0791 37.9749C17.8366 37.6298 19.9964 34.6728 17.428 33.0217C14.8597 31.3706 11.1906 27.7382 11.1906 21.2807C11.1906 13.2087 17.6115 7.15479 25.5 7.15479C33.3885 7.15479 40.7266 13.3922 40.1762 21.2807C39.7359 27.5915 36.5683 31.3095 34.1223 33.0217C31.6762 34.7339 33.5229 37.6044 32.2877 37.9749C30.4532 38.5253 22.3813 38.8922 19.0791 37.9749Z" stroke="#1D84B5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <circle cx="25.5" cy="25.5" r="24" stroke="#1D84B5" stroke-width="3"/>
-                                </svg> 
-                                <div class="pg-tip-text"><p class="pad">tap the year or name of a game to see it in detail :)</p></div>
-                            </div>   
-
-
+                            <div class="pg-recent">
+                                <a href="#recent-game">
+                                    <div class="game-name">2023 | charged up</div>    
+                                </a>
+                                <div class="pg-tip">
+                                    <svg class="lightbulb-circle" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.5287 44.0289C24.9496 42.0109 26.7841 42.1944 32.2877 44.0289M25.8669 17.2447L23.2985 22.0145L28.0683 22.198L25.8669 27.7015M19.0791 37.9749C17.8366 37.6298 19.9964 34.6728 17.428 33.0217C14.8597 31.3706 11.1906 27.7382 11.1906 21.2807C11.1906 13.2087 17.6115 7.15479 25.5 7.15479C33.3885 7.15479 40.7266 13.3922 40.1762 21.2807C39.7359 27.5915 36.5683 31.3095 34.1223 33.0217C31.6762 34.7339 33.5229 37.6044 32.2877 37.9749C30.4532 38.5253 22.3813 38.8922 19.0791 37.9749Z" stroke="#1D84B5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="25.5" cy="25.5" r="24" stroke="#1D84B5" stroke-width="3"/>
+                                    </svg> 
+                                    <div class="pg-tip-text"><p class="pad">tap the year or name of a game to see it in detail :)</p></div>
+                                </div>   
+                            </div>
+                                <div id="games-list">
+                                    <div class="col">
+                                        <ul>
+                                            <li>2022 | rapid react</li>
+                                            <li>2020-21 | infinite recharge</li>
+                                            <li>2019 | deep space</li>
+                                            <li>2018 | power up</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul>
+                                            <li>2017 | steamworks</li>
+                                            <li>2016 | stronghold</li>
+                                            <li>2015 | recycle rush</li>
+                                            <li>2014 | aerial assist</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul>
+                                            <li>2013 | ultimate ascent</li>
+                                            <li>2012 | rebound rumble</li>
+                                            <li>2011 | logo motion</li>
+                                            <li>2010 | breakaway</li>
+                                        </ul>    
+                                    </div>
+                                </div>
                         </div>
-                        <div class="pg-content"></div>
-                        <div class="games-list">
-                            <div class="col">
-                                <ul class = "game-list">
-                                    <li>2022 | rapid react</li>
-                                    <li>2020-21 | infinite recharge</li>
-                                    <li>2019 | deep space</li>
-                                    <li>2018 | power up</li>
-                                </ul>
+                            <div id="pg-content">
+                                <button id="back">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.90002 7.55999C9.21002 3.95999 11.06 2.48999 15.11 2.48999H15.24C19.71 2.48999 21.5 4.27999 21.5 8.74999V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54" stroke="#53A2BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15 12H3.62" stroke="#53A2BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.85 8.6499L2.5 11.9999L5.85 15.3499" stroke="#53A2BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> <p>back to game list</p>
+                                </button>
+                                <div class = 'game-desc'>
+                                        <h2 id='title-desc'></h2>
+                                        <p id = "desc-body"></p>
+                                </div>
+                                <div class = 'bg-rob-desc'>
+                                    <h2 class='title-rob-desc'>description</h2>
+                                    <p id = "rob-desc"></p>
+                                </div>
+                                <div class = 'bg-com'>
+                                    <h2 class='title-com'>strategic commentary</h2>
+                                    <p id = "com-body"></p>
+                                </div>
+                                <div class = 'bg-pic'>
+                                    <h2 id = "title-pic"></h2>
+                                    <div id="images"><img id="r-image" src="" alt="nothing here!"></div>
+                                    <div class = "tags">
+                                        <div class = "bg-tags">
+                                            <div class = 'tag-list'></div>
+                                        </div>
+                                    </div>
+                                        <div class = "regs">
+                                            <p class = "small-t" id = "text-t">match</p>
+                                            <p class = "accent-l" id = "match-n"> x</p>
+                                            <p class ='small-t' id = "text-t">, </p>
+                                            <p class = "accent" id = "reg-l">san diego </p>
+                                            <p class = "small-t" id="text-t">regional</p>
+                                        </div>
+                                        <button class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0a2239" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left-circle">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 8 8 12 12 16"></polyline>
+                                                <line x1="16" y1="12" x2="8" y2="12"></line>
+                                            </svg>
+                                        </button>
+                                        <button class="right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0a2239" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 16 16 12 12 8"></polyline>
+                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                            </svg>
+                                        </button>    
+                                </div>
                             </div>
-                            <div class="col">
-                                <ul>
-                                    <li>2017 | steamworks</li>
-                                    <li>2016 | stronghold</li>
-                                    <li>2015 | recycle rush</li>
-                                    <li>2014 | aerial assist</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul>
-                                    <li>2013 | ultimate ascent</li>
-                                    <li>2012 | rebound rumble</li>
-                                    <li>2011 | logo motion</li>
-                                    <li>2010 | breakaway</li>
-                                </ul>    
-                            </div>
-                        </div>
                     </section>
                     <section id='recent-game' style="height:100vh;">
                         <div class = 'recent-header'>
@@ -165,7 +217,7 @@
                                 </div>
                         </div>
                     </section>
-                    <section id="contact" style="height:100vh">
+                    <section id="contact" style="height:100vh;">
                         <div class='c-title'>contact us</div>
                         <div class="message">we hope this was useful! if you have any questions or suggestions regarding our database, please let us know. we’re always looking for ways to improve.</div>
                         <div class="c-form">
