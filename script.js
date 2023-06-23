@@ -121,25 +121,44 @@ const arr_descriptions = [
   const images = document.getElementById('images');
   var carousel_data;
   
+  //defaults the content to hidden
   pg_body.style.display = 'none';
 
+  //checks if the list is clicked
   year_list.addEventListener("click", function (event) {
     var num = -1; // Default value for num
   
+    //changes the screen
     if (event.target.tagName === "LI") {
       first.style.display = 'none';
       pg_body.style.display = 'block';
+
+      //back button func
+      function back(){
+        first.style.display = 'block';
+        pg_body.style.display = 'none';
+        console.log('works');
+      }
+  
+      //back button code
+      var backb = document.querySelector('#back');
+      backb.addEventListener('click', back);
+
       num = parseInt(event.target.textContent.split(" ")[0]); // Assign the parsed year value to num
       console.log(num);
     }
   
+    //assigning the year for descriptions -- VERY IMPORTANT ALWAYS USE THIS LAYOUT FOR WHENEVER YOU HAVE TO SET A DATA VALUE
     const gdata = arr_descriptions.find(obj => obj.year === num);
 
+    //assigning the year for carousel by year -- VERY IMPORTANT ALWAYS USE THIS LAYOUT FOR WHENEVER YOU HAVE TO SET A DATA VALUE
     carousel_data = arr_robots.filter(obj => obj.year === num);
 
     console.log(gdata.year);
     console.log(gdata.title);
 
+
+    //if the year is in the array, then this happens
     if (gdata) {
       //update page
       game_title.textContent = gdata.title;
@@ -186,19 +205,12 @@ const arr_descriptions = [
         newsrc = carousel_data[i].robotimg;
         rimage.setAttribute("src", newsrc);
       }
-      function back(){
-        first.style.display = 'block';
-        pg_body.style.display = 'none';
-        console.log('works');
-      }
 
       //left and right button code
       var rbutton = document.querySelector('.right');
       rbutton.addEventListener('click', right);
       var lbutton = document.querySelector('.left');
       lbutton.addEventListener('click', left);
-      var backb = document.querySelector('#back');
-      backb.addEventListener('click', back);
     }
   });
   
