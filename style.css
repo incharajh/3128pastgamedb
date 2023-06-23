@@ -59,7 +59,7 @@ div#credit-text{
     width:160%;
     left:57%;
     font-family: 'Roboto Mono', 'monospace';
-    font-size:0.765rem;
+    font-size:1.7vh;
     font-weight: lighter;
     border-style:solid;
     border-width: 0.157vw;
@@ -88,7 +88,7 @@ div#credit-text a{
     visibility: visible;
 }
 .sidebar-text{
-    font-size:1.35rem;
+    font-size:1.35vw;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -176,7 +176,7 @@ div#credit-text a{
     font-family: 'Roboto', 'sans-serif';
     font-style: italic;
     font-weight: bolder;
-    font-size: 4.4rem;
+    font-size: 4.5vw;
     top: 45%;
     left: 17%;
     -webkit-transform: rotate(-90deg);
@@ -216,7 +216,7 @@ div#credit-text a{
 }
 .main-tagline{
     font-family: 'Roboto', 'sans-serif';
-    font-size: 1.85rem;
+    font-size: 1.85vw;
     font-weight:90px;
     color:#0A2239;
 }
@@ -229,7 +229,7 @@ div#credit-text a{
     line-height: 18vh;
     letter-spacing: -6px;
     font-style:italic;
-    font-size: 8.8rem;
+    font-size: 9vw;
     font-weight:bolder;
     color:#53A2BE;
 }
@@ -252,8 +252,9 @@ div#credit-text a{
     position: absolute;
     font-family: 'Roboto', 'sans-serif'; 
     left:13%;
-    font-size: 4.1rem;
-    letter-spacing: 0.5rem;
+    font-size: 4.2vw;
+    letter-spacing: 0.5vw;
+    margin-bottom: 0;
 }
 .title{
     margin: auto;
@@ -277,15 +278,16 @@ div.bg-a {
     left:10%;
     padding:2.8vh 1.3vw 2.8vh 1.3vw;
     box-sizing:border-box;
+    margin-top:0;
 }
 .text-a{
     position: absolute;
     font-family:'Roboto Mono', 'monospace';
     color:#53A2BE;
-    line-height:2.5rem;
+    line-height:5.2vh;
     left:10%;
     width: 71.6vw;
-    font-size:1.7rem;
+    font-size:3.9vh;
     font-weight:bold;
 }
 .recent-header{
@@ -294,7 +296,7 @@ div.bg-a {
 }
 .header-r{
     font-family:'Roboto', 'sans-serif';
-    font-size: 5rem;
+    font-size: 5.2vw;
     font-weight:bolder;
     background: -webkit-linear-gradient(180deg, #1D84B5, #176087);
   -webkit-background-clip: text;
@@ -325,7 +327,7 @@ div.bg-sc{
 .title-ds, .title-sc{
     text-align:center;
     font-family:'Roboto Mono', 'monospace';
-    font-size:1.54rem;
+    font-size:3.3vh;
     color:#1D84B5;
 }
 .description-r, .commentary-r{
@@ -338,7 +340,7 @@ div.bg-sc{
 .game-d-r{
     position: absolute;
     font-family:'Roboto', 'sans-serif';
-    font-size:1.1rem;
+    font-size:2.5vh;
     width:44.3vw;
     color:#1D84B5;
     font-weight:bold;
@@ -360,7 +362,7 @@ div.bg-sc{
     top:-5%;
     text-align:center;
     font-family:'Roboto Mono', 'monospace';
-    font-size: 1.9rem;
+    font-size: 4vh;
     color:#176087;
 
 }
@@ -382,7 +384,7 @@ img.robot{
     padding:1.1vh 0.7vw 1.1vh 0.7vw;
     font-family:'Roboto Mono', 'monospace';
     color:#EDE6D9;
-    font-size:0.9rem;
+    font-size:2vh;
 }
 .regs-r{
     position: absolute;
@@ -395,7 +397,7 @@ img.robot{
     margin-left: 2px;
     margin-right: 2px;
     font-family: 'Roboto Mono', 'monospace';
-    font-size: 1rem;
+    font-size: 1vw;
 }
 .left{
     position:absolute;
@@ -417,7 +419,7 @@ img.robot{
 
 .pg-title{
     position:absolute;
-    font-size: 4.05rem;
+    font-size: 9vh;
     top:215%;
     left:13%;
     display:flex;
@@ -444,7 +446,7 @@ img.robot{
     color: #53A2BE;
     font-style:italic;
     font-weight:bolder;
-    font-size:2.25rem;
+    font-size:2.4vw;
     background: linear-gradient(to top, #E1DCD1 50%, transparent 50%);
     margin-right:2vw;
 }
@@ -463,7 +465,7 @@ img.robot{
     font-weight:bold;
     color:#1D84B5;
     height:3.5vh;
-    font-size:0.765rem;
+    font-size:1.7vh;
     width:27.2vw;
 }
 .pad{
@@ -483,7 +485,7 @@ div#games-list{
     color:#53A2BE;
     font-weight:bold;
     font-style:italic;
-    font-size:1.45rem;
+    font-size:1.5vw;
 }
 .col li{
     margin:10vh 0vw;
@@ -499,7 +501,7 @@ div#games-list{
 .game-desc h2{
     position: absolute;
     font-family:'Roboto', 'sans-serif';
-    font-size: 5rem;
+    font-size: 11vh;
     font-weight:bolder;
     background: -webkit-linear-gradient(180deg, #1D84B5, #176087);
   -webkit-background-clip: text;
@@ -510,7 +512,7 @@ div#games-list{
 .game-desc p{
     position: absolute;
     font-family:'Roboto', 'sans-serif';
-    font-size:1.1rem;
+    font-size:2.5vh;
     width:44.3vw;
     color:#1D84B5;
     font-weight:bold;
@@ -531,7 +533,7 @@ div#games-list{
 .bg-rob-desc h2, .bg-com h2{
     text-align:center;
     font-family:'Roboto Mono', 'monospace';
-    font-size:1.6rem;
+    font-size:3.3vh;
     color:#1D84B5;
 }
 button#back{
@@ -539,7 +541,7 @@ button#back{
     color:#53A2BE;
     font-family: 'Roboto', 'sans-serif';
     font-style: italic;
-    font-size:1.1rem;
+    font-size:2.2vh;
     top:214%;
     left:14%;
     display: flex;
@@ -618,7 +620,7 @@ img#r-image{
     position: absolute;
     width: 50%;
     font-family:'Roboto', 'sans-serif';
-    font-size:6.76rem;
+    font-size:7vw;
     font-weight:bolder;
     background-color: #0A2239;
     background-image: linear-gradient( 45deg, #0A2239 16.666%, #176087 16.666%, #176087 33.333%, #1D84B5 33.333%, #1D84B5 50%, #53A2BE  50%, #53A2BE  66.666%, #1D84B5 66.666%, #1D84B5 83.333%, #176087 83.333%);
