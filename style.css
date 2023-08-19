@@ -1,9 +1,20 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
+    height: 100vh;
     background-color: #EDE6D9;
     overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
+
 body::-webkit-scrollbar {
     display: none;
+}
+
+body section{
+    scroll-snap-align: start;
 }
 
 
@@ -27,7 +38,22 @@ svg.arrow{
     position:absolute;
     left:45%;
     border-radius:0.1vw;
+    transition: all 1s;
+    transform-origin: 50% 50%;
 }
+.sidebar-line-1:hover{
+    transform: scale(1.2);
+}
+.sidebar-line-2:hover{
+    transform: scale(1.2);
+}
+.sidebar-line-3:hover{
+    transform: scale(1.2);
+}
+.sidebar-line-4:hover{
+    transform: scale(1.2);
+}
+
 .sidebar-line-1{
     top:20%;
     background: #0A2239;
@@ -103,6 +129,11 @@ div#credit-text a{
     position: absolute;
     top:5%;
     left: 6%;
+    transition: all 1s;
+    transform-origin: 50% 50%;
+}
+.narwhal:hover{
+    filter: drop-shadow(5px 5px 5px #4d483f);
 }
 
 
@@ -126,28 +157,9 @@ div#credit-text a{
     display:inline-flex;
 
 }
-.s-icon{
-    stroke:#53A2BE;
-    stroke-width: 0.1vw;
-    align-self: center;
-    margin-left:0.7vw;
-    padding:0.2vw;
-    display:inline-flex;
-}
-.navbar input{
-    background: #E1DCD1;
-    outline:transparent;
-    border:transparent;
-    margin-left:0.5vw;
-    border-radius:3vh;
-    font-family:'Roboto', 'sans-serif';
-    font-size:2vh;
-    font-style:italic;
-    
-}
 .navbar a{
     padding: 2.4vh 1vw 2.4vh 1vw;
-    margin-left: 9vw;
+    margin-left: 14vw;
     font-family: 'Roboto Mono', 'monospace';
     font-size:normal;
     color: #53A2BE;
@@ -155,6 +167,7 @@ div#credit-text a{
 }
 .navbar a:hover{
     font-weight: 60px;
+    transform: scale(1.2);
 }
 
 
@@ -165,6 +178,7 @@ div#credit-text a{
     flex-direction: column;
     margin: 0 auto; /* center horizontally */
 }
+
 .scroll-text {
     position: absolute;
     color: transparent;
@@ -177,15 +191,14 @@ div#credit-text a{
     font-style: italic;
     font-weight: bolder;
     font-size: 4.5vw;
-    top: 45%;
-    left: 17%;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    top: 35%;
+    left: 20.5%;
     margin: 0 auto;
-    transition: all .3s ease-in-out 0s;
-    
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    -webkit-transform: scale(-1, -1);
 }
+
 .scroll-arrow {
   align-items: center;
   position:absolute;
@@ -193,13 +206,38 @@ div#credit-text a{
   height: 10vh;
   top: 65%;
   left: 21%;
+  opacity: 0;
+    --delay: 2s;
+    animation-delay: --delay;
+    animation-name: cascade;
+    animation-duration: 0.85s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-direction: alternate;
 }
-/* .scroll-container :hover{
-    transform: translateY(50%);
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-    transition-delay: calc(0.055s);
-} */
+
+.scroll-container {
+    animation: fade-in 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  svg.arrow{
+    opacity: 0;
+    --delay: 2s;
+    animation-delay: --delay;
+    animation-name: cascade;
+    animation-duration: 0.85s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-direction: alternate;
+  /*   animation-iteration-count: infinite; */
+  }
+  
+  @keyframes cascade {
+    to {
+      transform: translate(0, -20px);
+      opacity: 1;
+    }
+  }
 
 .tagline-wrapper{
     position:absolute;
@@ -508,6 +546,7 @@ div#games-list{
   -webkit-text-fill-color: transparent;  
   font-style: italic;
   left:14%;
+  top:213%;
 }
 .game-desc p{
     position: absolute;
@@ -593,7 +632,7 @@ h2#title-pic{
 }
 .regs{
     position: absolute;
-    left:50%;
+    left:45%;
     top:50%;
     display:flex;
     flex-wrap:wrap;
