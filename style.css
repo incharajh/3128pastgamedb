@@ -172,11 +172,17 @@ div#credit-text a{
 
 
 .scroll-container {
-    display: flex;
+    display: absolute;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 0 auto; /* center horizontally */
+    animation-delay: --delay;
+    animation-name: cascade;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-direction: alternate;
 }
 
 .scroll-text {
@@ -206,17 +212,16 @@ div#credit-text a{
   height: 10vh;
   top: 65%;
   left: 21%;
-  opacity: 0;
     --delay: 2s;
     animation-delay: --delay;
     animation-name: cascade;
-    animation-duration: 0.85s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     animation-direction: alternate;
 }
   
-  @keyframes scroll-container {
+  @keyframes cascade {
     0%,40%,100% {
         transform: translateY(0)
       }
